@@ -55,9 +55,10 @@
 ## 📝 項目說明
 
 > [!IMPORTANT]
-> - 本項目僅供個人學習使用，不保證穩定性，且不提供任何技術支援
-> - 使用者必須在遵循 OpenAI 的 [使用條款](https://openai.com/policies/terms-of-use) 以及**法律法規**的情況下使用，不得用於非法用途
-> - 根據 [《生成式人工智慧服務管理暫行辦法》](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm) 的要求，請勿對中國地區公眾提供一切未經備案的生成式人工智慧服務
+> - 本專案僅面向合法授權的 AI API 閘道、組織內部鑑權、多模型管理、用量統計、成本核算和私有化部署場景。
+> - 使用者必須合法取得上游 API Key、帳號、模型服務或介面權限，並遵守上游服務條款及適用法律法規。
+> - 使用者應確保其使用方式符合上游服務條款及適用法律法規。
+> - 面向公眾提供生成式人工智慧服務時，使用者應遵守[《生成式人工智慧服務管理暫行辦法》](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)等監管要求，自行完成所在司法轄區要求的備案、許可、內容安全、實名、日誌留存、稅務和上游授權等合規義務。
 
 ---
 
@@ -110,7 +111,7 @@
 
 ```bash
 # 複製項目
-git clone https://github.com/oorouter.git
+git clone https://github.com/QuantumNous/new-api.git
 cd new-api
 
 # 編輯 docker-compose.yml 配置
@@ -151,7 +152,10 @@ docker run --name new-api -d --restart always \
 
 🎉 部署完成後，訪問 `http://localhost:3000` 即可使用！
 
-📖 更多部署方式請參考 [部署指南](https://www.octorouter.com/docs/installation)
+> [!WARNING]
+> 將本專案作為面向公眾的生成式 AI 服務或 API 轉售服務運營時，使用者應先完成備案、內容安全、實名、日誌留存、稅務、支付和上游授權等合規義務。
+
+📖 更多部署方式請參考 [部署指南](https://docs.newapi.pro/zh/docs/installation)
 
 ---
 
@@ -159,7 +163,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 📖 [官方文件](https://www.octorouter.com/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
+### 📖 [官方文件](https://docs.newapi.pro/zh/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
 
 </div>
 
@@ -167,17 +171,17 @@ docker run --name new-api -d --restart always \
 
 | 分類 | 連結 |
 |------|------|
-| 🚀 部署指南 | [安裝文件](https://www.octorouter.com/docs/installation) |
-| ⚙️ 環境配置 | [環境變數](https://www.octorouter.com/docs/installation/config-maintenance/environment-variables) |
-| 📡 接口文件 | [API 文件](https://www.octorouter.com/docs/api) |
-| ❓ 常見問題 | [FAQ](https://www.octorouter.com/docs/support/faq) |
-| 💬 社群交流 | [交流管道](https://www.octorouter.com/docs/support/community-interaction) |
+| 🚀 部署指南 | [安裝文件](https://docs.newapi.pro/zh/docs/installation) |
+| ⚙️ 環境配置 | [環境變數](https://docs.newapi.pro/zh/docs/installation/config-maintenance/environment-variables) |
+| 📡 接口文件 | [API 文件](https://docs.newapi.pro/zh/docs/api) |
+| ❓ 常見問題 | [FAQ](https://docs.newapi.pro/zh/docs/support/faq) |
+| 💬 社群交流 | [交流管道](https://docs.newapi.pro/zh/docs/support/community-interaction) |
 
 ---
 
 ## ✨ 主要特性
 
-> 詳細特性請參考 [特性說明](https://www.octorouter.com/docs/guide/wiki/basic-concepts/features-introduction)
+> 詳細特性請參考 [特性說明](https://docs.newapi.pro/zh/docs/guide/wiki/basic-concepts/features-introduction)
 
 ### 🎨 核心功能
 
@@ -189,12 +193,12 @@ docker run --name new-api -d --restart always \
 | 📈 數據看板 | 視覺化控制檯與統計分析 |
 | 🔒 權限管理 | 令牌分組、模型限制、用戶管理 |
 
-### 💰 支付與計費
+### 💰 授權用量與成本管理
 
-- ✅ 在線儲值（易支付、Stripe）
-- ✅ 模型按次數收費
-- ✅ 快取計費支援（OpenAI、Azure、DeepSeek、Claude、Qwen等所有支援的模型）
-- ✅ 靈活的計費策略配置
+- ✅ 合法授權場景下的內部儲值與額度分配（易支付、Stripe）
+- ✅ 組織內按次、按量或快取命中成本核算
+- ✅ 支援 OpenAI、Azure、DeepSeek、Claude、Qwen 等模型的快取計費統計
+- ✅ 面向內部管理或企業客戶的靈活計費策略配置
 
 ### 🔐 授權與安全
 
@@ -202,16 +206,16 @@ docker run --name new-api -d --restart always \
 - 🤖 LinuxDO 授權登錄
 - 📱 Telegram 授權登錄
 - 🔑 OIDC 統一認證
-- 🔍 Key 查詢使用額度（配合 [neko-api-key-tool](https://github.com/Calcium-Ion/neko-api-key-tool)）
+- 🔍 Key 查詢使用額度（配合 [new-api-key-tool](https://github.com/Calcium-Ion/new-api-key-tool)）
 
 ### 🚀 高級功能
 
 **API 格式支援：**
-- ⚡ [OpenAI Responses](https://www.octorouter.com/docs/api/ai-model/chat/openai/create-response)
-- ⚡ [OpenAI Realtime API](https://www.octorouter.com/docs/api/ai-model/realtime/create-realtime-session)（含 Azure）
-- ⚡ [Claude Messages](https://www.octorouter.com/docs/api/ai-model/chat/create-message)
-- ⚡ [Google Gemini](https://www.octorouter.com/docs/api/google-gemini-chat)
-- 🔄 [Rerank 模型](https://www.octorouter.com/docs/api/ai-model/rerank/create-rerank)（Cohere、Jina）
+- ⚡ [OpenAI Responses](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/create-response)
+- ⚡ [OpenAI Realtime API](https://docs.newapi.pro/zh/docs/api/ai-model/realtime/create-realtime-session)（含 Azure）
+- ⚡ [Claude Messages](https://docs.newapi.pro/zh/docs/api/ai-model/chat/create-message)
+- ⚡ [Google Gemini](https://doc.newapi.pro/api/google-gemini-chat)
+- 🔄 [Rerank 模型](https://docs.newapi.pro/zh/docs/api/ai-model/rerank/create-rerank)（Cohere、Jina）
 
 **智慧路由：**
 - ⚖️ 管道加權隨機
@@ -254,35 +258,35 @@ docker run --name new-api -d --restart always \
 
 ## 🤖 模型支援
 
-> 詳情請參考 [接口文件 - 中繼接口](https://www.octorouter.com/docs/api)
+> 詳情請參考 [接口文件 - 閘道接口](https://docs.newapi.pro/zh/docs/api)
 
 | 模型類型 | 說明 | 文件 |
 |---------|------|------|
-| 🤖 OpenAI-Compatible | OpenAI 兼容模型 | [文件](https://www.octorouter.com/docs/api/ai-model/chat/openai/createchatcompletion) |
-| 🤖 OpenAI Responses | OpenAI Responses 格式 | [文件](https://www.octorouter.com/docs/api/ai-model/chat/openai/createresponse) |
-| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [文件](https://www.octorouter.com/docs/api/midjourney-proxy-image) |
-| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [文件](https://www.octorouter.com/docs/api/suno-music) |
-| 🔄 Rerank | Cohere、Jina | [文件](https://www.octorouter.com/docs/api/ai-model/rerank/create-rerank) |
-| 💬 Claude | Messages 格式 | [文件](https://www.octorouter.com/docs/api/ai-model/chat/createmessage) |
-| 🌐 Gemini | Google Gemini 格式 | [文件](https://www.octorouter.com/docs/api/ai-model/chat/gemini/geminirelayv1beta) |
+| 🤖 OpenAI-Compatible | OpenAI 兼容模型 | [文件](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/createchatcompletion) |
+| 🤖 OpenAI Responses | OpenAI Responses 格式 | [文件](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/createresponse) |
+| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [文件](https://doc.newapi.pro/api/midjourney-proxy-image) |
+| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [文件](https://doc.newapi.pro/api/suno-music) |
+| 🔄 Rerank | Cohere、Jina | [文件](https://docs.newapi.pro/zh/docs/api/ai-model/rerank/create-rerank) |
+| 💬 Claude | Messages 格式 | [文件](https://docs.newapi.pro/zh/docs/api/ai-model/chat/createmessage) |
+| 🌐 Gemini | Google Gemini 格式 | [文件](https://docs.newapi.pro/zh/docs/api/ai-model/chat/gemini/geminirelayv1beta) |
 | 🔧 Dify | ChatFlow 模式 | - |
-| 🎯 自訂 | 支援完整調用位址 | - |
+| 🎯 自訂上游 | 支援配置合法授權的上游介面位址 | - |
 
 ### 📡 支援的接口
 
 <details>
 <summary>查看完整接口列表</summary>
 
-- [聊天接口 (Chat Completions)](https://www.octorouter.com/docs/api/ai-model/chat/openai/createchatcompletion)
-- [響應接口 (Responses)](https://www.octorouter.com/docs/api/ai-model/chat/openai/createresponse)
-- [圖像接口 (Image)](https://www.octorouter.com/docs/api/ai-model/images/openai/post-v1-images-generations)
-- [音訊接口 (Audio)](https://www.octorouter.com/docs/api/ai-model/audio/openai/create-transcription)
-- [影片接口 (Video)](https://www.octorouter.com/docs/api/ai-model/audio/openai/createspeech)
-- [嵌入接口 (Embeddings)](https://www.octorouter.com/docs/api/ai-model/embeddings/createembedding)
-- [重排序接口 (Rerank)](https://www.octorouter.com/docs/api/ai-model/rerank/creatererank)
-- [即時對話 (Realtime)](https://www.octorouter.com/docs/api/ai-model/realtime/createrealtimesession)
-- [Claude 聊天](https://www.octorouter.com/docs/api/ai-model/chat/createmessage)
-- [Google Gemini 聊天](https://www.octorouter.com/docs/api/ai-model/chat/gemini/geminirelayv1beta)
+- [聊天接口 (Chat Completions)](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/createchatcompletion)
+- [響應接口 (Responses)](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/createresponse)
+- [圖像接口 (Image)](https://docs.newapi.pro/zh/docs/api/ai-model/images/openai/post-v1-images-generations)
+- [音訊接口 (Audio)](https://docs.newapi.pro/zh/docs/api/ai-model/audio/openai/create-transcription)
+- [影片接口 (Video)](https://docs.newapi.pro/zh/docs/api/ai-model/audio/openai/createspeech)
+- [嵌入接口 (Embeddings)](https://docs.newapi.pro/zh/docs/api/ai-model/embeddings/createembedding)
+- [重排序接口 (Rerank)](https://docs.newapi.pro/zh/docs/api/ai-model/rerank/creatererank)
+- [即時對話 (Realtime)](https://docs.newapi.pro/zh/docs/api/ai-model/realtime/createrealtimesession)
+- [Claude 聊天](https://docs.newapi.pro/zh/docs/api/ai-model/chat/createmessage)
+- [Google Gemini 聊天](https://docs.newapi.pro/zh/docs/api/ai-model/chat/gemini/geminirelayv1beta)
 
 </details>
 
@@ -325,7 +329,7 @@ docker run --name new-api -d --restart always \
 | `PYROSCOPE_BLOCK_RATE` | Pyroscope block 採樣率                               | `5` |
 | `HOSTNAME` | Pyroscope 標籤裡的主機名                                          | `new-api` |
 
-📖 **完整配置：** [環境變數文件](https://www.octorouter.com/docs/installation/config-maintenance/environment-variables)
+📖 **完整配置：** [環境變數文件](https://docs.newapi.pro/zh/docs/installation/config-maintenance/environment-variables)
 
 </details>
 
@@ -336,7 +340,7 @@ docker run --name new-api -d --restart always \
 
 ```bash
 # 複製項目
-git clone https://github.com/oorouter.git
+git clone https://github.com/QuantumNous/new-api.git
 cd new-api
 
 # 編輯配置
@@ -416,7 +420,7 @@ docker run --name new-api -d --restart always \
 
 | 項目 | 說明 |
 |------|------|
-| [neko-api-key-tool](https://github.com/Calcium-Ion/neko-api-key-tool) | Key 額度查詢工具 |
+| [new-api-key-tool](https://github.com/Calcium-Ion/new-api-key-tool) | Key 額度查詢工具 |
 | [new-api-horizon](https://github.com/Calcium-Ion/new-api-horizon) | New API 高性能優化版 |
 
 ---
@@ -427,10 +431,10 @@ docker run --name new-api -d --restart always \
 
 | 資源 | 連結 |
 |------|------|
-| 📘 常見問題 | [FAQ](https://www.octorouter.com/docs/support/faq) |
-| 💬 社群交流 | [交流管道](https://www.octorouter.com/docs/support/community-interaction) |
-| 🐛 回饋問題 | [問題回饋](https://www.octorouter.com/docs/support/feedback-issues) |
-| 📚 完整文件 | [官方文件](https://www.octorouter.com/docs) |
+| 📘 常見問題 | [FAQ](https://docs.newapi.pro/zh/docs/support/faq) |
+| 💬 社群交流 | [交流管道](https://docs.newapi.pro/zh/docs/support/community-interaction) |
+| 🐛 回饋問題 | [問題回饋](https://docs.newapi.pro/zh/docs/support/feedback-issues) |
+| 📚 完整文件 | [官方文件](https://docs.newapi.pro/zh/docs) |
 
 ### 🤝 貢獻指南
 
@@ -469,7 +473,7 @@ docker run --name new-api -d --restart always \
 
 如果這個項目對你有幫助，歡迎給我們一個 ⭐️ Star！
 
-**[官方文件](https://www.octorouter.com/docs)** • **[問題回饋](https://github.com/Calcium-Ion/new-api/issues)** • **[最新發布](https://github.com/Calcium-Ion/new-api/releases)**
+**[官方文件](https://docs.newapi.pro/zh/docs)** • **[問題回饋](https://github.com/Calcium-Ion/new-api/issues)** • **[最新發布](https://github.com/Calcium-Ion/new-api/releases)**
 
 <sub>Built with ❤️ by QuantumNous</sub>
 

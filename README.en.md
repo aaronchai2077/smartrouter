@@ -53,9 +53,10 @@
 > This is an open-source project developed based on [One API](https://github.com/songquanpeng/one-api)
 
 > [!IMPORTANT]  
-> - This project is for personal learning purposes only, with no guarantee of stability or technical support
-> - Users must comply with OpenAI's [Terms of Use](https://openai.com/policies/terms-of-use) and **applicable laws and regulations**, and must not use it for illegal purposes
-> - According to the [《Interim Measures for the Management of Generative Artificial Intelligence Services》](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm), please do not provide any unregistered generative AI services to the public in China.
+> - This project is intended solely for lawful and authorized AI API gateway, organization-level authentication, multi-model management, usage analytics, cost accounting, and private deployment scenarios.
+> - Users must lawfully obtain upstream API keys, accounts, model services, and interface permissions, and must comply with upstream terms of service and applicable laws and regulations.
+> - Users should ensure their use complies with upstream terms of service and applicable laws and regulations.
+> - When providing generative AI services to the public, users should comply with applicable regulatory requirements and fulfill all filing, licensing, content safety, real-name verification, log retention, tax, and upstream authorization obligations required by their jurisdiction.
 
 ---
 
@@ -105,7 +106,7 @@
 
 ```bash
 # Clone the project
-git clone https://github.com/oorouter.git
+git clone https://github.com/QuantumNous/new-api.git
 cd new-api
 
 # Edit docker-compose.yml configuration
@@ -146,7 +147,10 @@ docker run --name new-api -d --restart always \
 
 🎉 After deployment is complete, visit `http://localhost:3000` to start using!
 
-📖 For more deployment methods, please refer to [Deployment Guide](https://www.octorouter.com/docs/installation)
+> [!WARNING]
+> When operating this project as a public generative AI service or API resale service, users should first complete all required filing, licensing, content safety, real-name verification, log retention, tax, payment, and upstream authorization obligations.
+
+📖 For more deployment methods, please refer to [Deployment Guide](https://docs.newapi.pro/en/docs/installation)
 
 ---
 
@@ -154,7 +158,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 📖 [Official Documentation](https://www.octorouter.com/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
+### 📖 [Official Documentation](https://docs.newapi.pro/en/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
 
 </div>
 
@@ -162,17 +166,17 @@ docker run --name new-api -d --restart always \
 
 | Category | Link |
 |------|------|
-| 🚀 Deployment Guide | [Installation Documentation](https://www.octorouter.com/docs/installation) |
-| ⚙️ Environment Configuration | [Environment Variables](https://www.octorouter.com/docs/installation/config-maintenance/environment-variables) |
-| 📡 API Documentation | [API Documentation](https://www.octorouter.com/docs/api) |
-| ❓ FAQ | [FAQ](https://www.octorouter.com/docs/support/faq) |
-| 💬 Community Interaction | [Communication Channels](https://www.octorouter.com/docs/support/community-interaction) |
+| 🚀 Deployment Guide | [Installation Documentation](https://docs.newapi.pro/en/docs/installation) |
+| ⚙️ Environment Configuration | [Environment Variables](https://docs.newapi.pro/en/docs/installation/config-maintenance/environment-variables) |
+| 📡 API Documentation | [API Documentation](https://docs.newapi.pro/en/docs/api) |
+| ❓ FAQ | [FAQ](https://docs.newapi.pro/en/docs/support/faq) |
+| 💬 Community Interaction | [Communication Channels](https://docs.newapi.pro/en/docs/support/community-interaction) |
 
 ---
 
 ## ✨ Key Features
 
-> For detailed features, please refer to [Features Introduction](https://www.octorouter.com/docs/guide/wiki/basic-concepts/features-introduction)
+> For detailed features, please refer to [Features Introduction](https://docs.newapi.pro/en/docs/guide/wiki/basic-concepts/features-introduction)
 
 ### 🎨 Core Functions
 
@@ -184,12 +188,12 @@ docker run --name new-api -d --restart always \
 | 📈 Data Dashboard | Visual console and statistical analysis |
 | 🔒 Permission Management | Token grouping, model restrictions, user management |
 
-### 💰 Payment and Billing
+### 💰 Authorized Usage Accounting and Billing
 
-- ✅ Online recharge (EPay, Stripe)
-- ✅ Pay-per-use model pricing
-- ✅ Cache billing support (OpenAI, Azure, DeepSeek, Claude, Qwen and all supported models)
-- ✅ Flexible billing policy configuration
+- ✅ Internal top-up and quota allocation for lawful authorized scenarios (EPay, Stripe)
+- ✅ Organization-level per-request, usage-based, and cache-hit cost accounting
+- ✅ Cache billing statistics for OpenAI, Azure, DeepSeek, Claude, Qwen, and supported models
+- ✅ Flexible billing policies for internal management or authorized enterprise customers
 
 ### 🔐 Authorization and Security
 
@@ -201,11 +205,11 @@ docker run --name new-api -d --restart always \
 ### 🚀 Advanced Features
 
 **API Format Support:**
-- ⚡ [OpenAI Responses](https://www.octorouter.com/docs/api/ai-model/chat/openai/create-response)
-- ⚡ [OpenAI Realtime API](https://www.octorouter.com/docs/api/ai-model/realtime/create-realtime-session) (including Azure)
-- ⚡ [Claude Messages](https://www.octorouter.com/docs/api/ai-model/chat/create-message)
-- ⚡ [Google Gemini](https://www.octorouter.com/docs/en/api/google-gemini-chat)
-- 🔄 [Rerank Models](https://www.octorouter.com/docs/api/ai-model/rerank/create-rerank) (Cohere, Jina)
+- ⚡ [OpenAI Responses](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/create-response)
+- ⚡ [OpenAI Realtime API](https://docs.newapi.pro/en/docs/api/ai-model/realtime/create-realtime-session) (including Azure)
+- ⚡ [Claude Messages](https://docs.newapi.pro/en/docs/api/ai-model/chat/create-message)
+- ⚡ [Google Gemini](https://doc.newapi.pro/en/api/google-gemini-chat)
+- 🔄 [Rerank Models](https://docs.newapi.pro/en/docs/api/ai-model/rerank/create-rerank) (Cohere, Jina)
 
 **Intelligent Routing:**
 - ⚖️ Channel weighted random
@@ -248,34 +252,34 @@ docker run --name new-api -d --restart always \
 
 ## 🤖 Model Support
 
-> For details, please refer to [API Documentation - Relay Interface](https://www.octorouter.com/docs/api)
+> For details, please refer to [API Documentation - Gateway Interface](https://docs.newapi.pro/en/docs/api)
 
 | Model Type | Description | Documentation |
 |---------|------|------|
 | 🤖 OpenAI GPTs | gpt-4-gizmo-* series | - |
-| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [Documentation](https://www.octorouter.com/docs/en/api/midjourney-proxy-image) |
-| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [Documentation](https://www.octorouter.com/docs/en/api/suno-music) |
-| 🔄 Rerank | Cohere, Jina | [Documentation](https://www.octorouter.com/docs/api/ai-model/rerank/create-rerank) |
-| 💬 Claude | Messages format | [Documentation](https://www.octorouter.com/docs/api/ai-model/chat/create-message) |
-| 🌐 Gemini | Google Gemini format | [Documentation](https://www.octorouter.com/docs/en/api/google-gemini-chat) |
+| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [Documentation](https://doc.newapi.pro/en/api/midjourney-proxy-image) |
+| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [Documentation](https://doc.newapi.pro/en/api/suno-music) |
+| 🔄 Rerank | Cohere, Jina | [Documentation](https://docs.newapi.pro/en/docs/api/ai-model/rerank/create-rerank) |
+| 💬 Claude | Messages format | [Documentation](https://docs.newapi.pro/en/docs/api/ai-model/chat/create-message) |
+| 🌐 Gemini | Google Gemini format | [Documentation](https://doc.newapi.pro/en/api/google-gemini-chat) |
 | 🔧 Dify | ChatFlow mode | - |
-| 🎯 Custom | Supports complete call address | - |
+| 🎯 Custom upstream | Supports configuring legally authorized upstream endpoints | - |
 
 ### 📡 Supported Interfaces
 
 <details>
 <summary>View complete interface list</summary>
 
-- [Chat Interface (Chat Completions)](https://www.octorouter.com/docs/api/ai-model/chat/openai/create-chat-completion)
-- [Response Interface (Responses)](https://www.octorouter.com/docs/api/ai-model/chat/openai/create-response)
-- [Image Interface (Image)](https://www.octorouter.com/docs/api/ai-model/images/openai/v1-images-generations--post)
-- [Audio Interface (Audio)](https://www.octorouter.com/docs/api/ai-model/audio/openai/create-transcription)
-- [Video Interface (Video)](https://www.octorouter.com/docs/api/ai-model/videos/create-video-generation)
-- [Embedding Interface (Embeddings)](https://www.octorouter.com/docs/api/ai-model/embeddings/create-embedding)
-- [Rerank Interface (Rerank)](https://www.octorouter.com/docs/api/ai-model/rerank/create-rerank)
-- [Realtime Conversation (Realtime)](https://www.octorouter.com/docs/api/ai-model/realtime/create-realtime-session)
-- [Claude Chat](https://www.octorouter.com/docs/api/ai-model/chat/create-message)
-- [Google Gemini Chat](https://www.octorouter.com/docs/en/api/google-gemini-chat)
+- [Chat Interface (Chat Completions)](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/create-chat-completion)
+- [Response Interface (Responses)](https://docs.newapi.pro/en/docs/api/ai-model/chat/openai/create-response)
+- [Image Interface (Image)](https://docs.newapi.pro/en/docs/api/ai-model/images/openai/v1-images-generations--post)
+- [Audio Interface (Audio)](https://docs.newapi.pro/en/docs/api/ai-model/audio/openai/create-transcription)
+- [Video Interface (Video)](https://docs.newapi.pro/en/docs/api/ai-model/videos/create-video-generation)
+- [Embedding Interface (Embeddings)](https://docs.newapi.pro/en/docs/api/ai-model/embeddings/create-embedding)
+- [Rerank Interface (Rerank)](https://docs.newapi.pro/en/docs/api/ai-model/rerank/create-rerank)
+- [Realtime Conversation (Realtime)](https://docs.newapi.pro/en/docs/api/ai-model/realtime/create-realtime-session)
+- [Claude Chat](https://docs.newapi.pro/en/docs/api/ai-model/chat/create-message)
+- [Google Gemini Chat](https://doc.newapi.pro/en/api/google-gemini-chat)
 
 </details>
 
@@ -318,7 +322,7 @@ docker run --name new-api -d --restart always \
 | `PYROSCOPE_BLOCK_RATE` | Pyroscope block sampling rate | `5` |
 | `HOSTNAME` | Hostname tag for Pyroscope | `new-api` |
 
-📖 **Complete configuration:** [Environment Variables Documentation](https://www.octorouter.com/docs/installation/config-maintenance/environment-variables)
+📖 **Complete configuration:** [Environment Variables Documentation](https://docs.newapi.pro/en/docs/installation/config-maintenance/environment-variables)
 
 </details>
 
@@ -329,7 +333,7 @@ docker run --name new-api -d --restart always \
 
 ```bash
 # Clone the project
-git clone https://github.com/oorouter.git
+git clone https://github.com/QuantumNous/new-api.git
 cd new-api
 
 # Edit configuration
@@ -409,7 +413,7 @@ docker run --name new-api -d --restart always \
 
 | Project | Description |
 |------|------|
-| [neko-api-key-tool](https://github.com/Calcium-Ion/neko-api-key-tool) | Key quota query tool |
+| [new-api-key-tool](https://github.com/Calcium-Ion/new-api-key-tool) | Key quota query tool |
 | [new-api-horizon](https://github.com/Calcium-Ion/new-api-horizon) | New API high-performance optimized version |
 
 ---
@@ -420,10 +424,10 @@ docker run --name new-api -d --restart always \
 
 | Resource | Link |
 |------|------|
-| 📘 FAQ | [FAQ](https://www.octorouter.com/docs/support/faq) |
-| 💬 Community Interaction | [Communication Channels](https://www.octorouter.com/docs/support/community-interaction) |
-| 🐛 Issue Feedback | [Issue Feedback](https://www.octorouter.com/docs/support/feedback-issues) |
-| 📚 Complete Documentation | [Official Documentation](https://www.octorouter.com/docs) |
+| 📘 FAQ | [FAQ](https://docs.newapi.pro/en/docs/support/faq) |
+| 💬 Community Interaction | [Communication Channels](https://docs.newapi.pro/en/docs/support/community-interaction) |
+| 🐛 Issue Feedback | [Issue Feedback](https://docs.newapi.pro/en/docs/support/feedback-issues) |
+| 📚 Complete Documentation | [Official Documentation](https://docs.newapi.pro/en/docs) |
 
 ### 🤝 Contribution Guide
 
@@ -452,7 +456,7 @@ Welcome all forms of contribution!
 
 If this project is helpful to you, welcome to give us a ⭐️ Star！
 
-**[Official Documentation](https://www.octorouter.com/docs)** • **[Issue Feedback](https://github.com/Calcium-Ion/new-api/issues)** • **[Latest Release](https://github.com/Calcium-Ion/new-api/releases)**
+**[Official Documentation](https://docs.newapi.pro/en/docs)** • **[Issue Feedback](https://github.com/Calcium-Ion/new-api/issues)** • **[Latest Release](https://github.com/Calcium-Ion/new-api/releases)**
 
 <sub>Built with ❤️ by QuantumNous</sub>
 
