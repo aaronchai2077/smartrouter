@@ -62,23 +62,23 @@ const About = () => {
   const customDescription = (
     <div style={{ textAlign: 'center' }}>
       <p>{t('可在设置页面设置关于内容，支持 HTML & Markdown')}</p>
-      {t('BaiwixRouter项目仓库地址：')}
+      {t('OORouter项目仓库地址：')}
       <a
-        href='https://github.com/QuantumNous/new-api'
+        href='https://github.com/oorouter'
         target='_blank'
         rel='noopener noreferrer'
         className='!text-semi-color-primary'
       >
-        https://github.com/QuantumNous/new-api
+        https://github.com/oorouter
       </a>
       <p>
         <a
-          href='https://github.com/QuantumNous/new-api'
+          href='https://github.com/oorouter'
           target='_blank'
           rel='noopener noreferrer'
           className='!text-semi-color-primary'
         >
-          BaiwixRouter
+          OORouter
         </a>{' '}
         {t('© {{currentYear}}', { currentYear })}{' '}
         <a

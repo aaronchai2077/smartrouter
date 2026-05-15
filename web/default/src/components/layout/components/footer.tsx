@@ -64,12 +64,12 @@ function ProjectAttribution(props: { currentYear: number }) {
       <span className='text-muted-foreground/45'>
         &copy; {props.currentYear}{' '}
         <a
-          href='https://github.com/QuantumNous/new-api'
+          href='https://github.com/oorouter'
           target='_blank'
           rel='noopener noreferrer'
           className='text-foreground/70 hover:text-foreground font-medium transition-colors'
         >
-          {t('BaiwixRouter')}
+          {t('OORouter')}
         </a>
         . {t(NEW_API_FOOTER_ATTRIBUTION_KEY)}
       </span>
@@ -87,7 +87,7 @@ export function Footer(props: FooterProps) {
   } = useSystemConfig()
 
   const displayLogo = systemLogo || props.logo || '/logo.png'
-  const displayName = systemName || props.name || 'BaiwixRouter'
+  const displayName = systemName || props.name || 'OORouter'
   const isDemoSiteMode = Boolean(demoSiteEnabled)
   const currentYear = new Date().getFullYear()
 
@@ -98,15 +98,15 @@ export function Footer(props: FooterProps) {
         links: [
           {
             text: t('footer.columns.about.links.aboutProject'),
-            href: 'https://docs.newapi.pro/wiki/project-introduction/',
+            href: 'https://www.octorouter.com/docs/wiki/project-introduction/',
           },
           {
             text: t('footer.columns.about.links.contact'),
-            href: 'https://docs.newapi.pro/support/community-interaction/',
+            href: 'https://www.octorouter.com/docs/support/community-interaction/',
           },
           {
             text: t('footer.columns.about.links.features'),
-            href: 'https://docs.newapi.pro/wiki/features-introduction/',
+            href: 'https://www.octorouter.com/docs/wiki/features-introduction/',
           },
         ],
       },
@@ -115,15 +115,15 @@ export function Footer(props: FooterProps) {
         links: [
           {
             text: t('footer.columns.docs.links.quickStart'),
-            href: 'https://docs.newapi.pro/getting-started/',
+            href: 'https://www.octorouter.com/docs/getting-started/',
           },
           {
             text: t('footer.columns.docs.links.installation'),
-            href: 'https://docs.newapi.pro/installation/',
+            href: 'https://www.octorouter.com/docs/installation/',
           },
           {
             text: t('footer.columns.docs.links.apiDocs'),
-            href: 'https://docs.newapi.pro/api/',
+            href: 'https://www.octorouter.com/docs/api/',
           },
         ],
       },

@@ -177,7 +177,7 @@ export function PasskeySection({ defaultValues }: PasskeySectionProps) {
                 <FormLabel>{t('Relying Party Display Name')}</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder={t('e.g. BaiwixRouter Console')}
+                    placeholder={t('e.g. OORouter Console')}
                     {...field}
                     value={field.value ?? ''}
                   />

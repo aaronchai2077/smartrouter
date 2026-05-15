@@ -254,7 +254,7 @@ export function EmailSettingsSection({
                 <FormControl>
                   <Input
                     autoComplete='off'
-                    placeholder={t('BaiwixRouter &lt;noreply@example.com&gt;')}
+                    placeholder={t('OORouter &lt;noreply@example.com&gt;')}
                     {...field}
                     onChange={(event) => field.onChange(event.target.value)}
                   />

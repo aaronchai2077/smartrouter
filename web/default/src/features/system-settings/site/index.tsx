@@ -8,7 +8,7 @@ import {
 const defaultSiteSettings: SiteSettings = {
   'theme.frontend': 'default',
   Notice: '',
-  SystemName: 'BaiwixRouter',
+  SystemName: 'OORouter',
   Logo: '',
   Footer: '',
   About: '',

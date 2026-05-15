@@ -110,7 +110,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/QuantumNous/new-api.git
+git clone https://github.com/oorouter.git
 cd new-api
 
 # 编辑 docker-compose.yml 配置
@@ -151,7 +151,7 @@ docker run --name new-api -d --restart always \
 
 🎉 部署完成后，访问 `http://localhost:3000` 即可使用！
 
-📖 更多部署方式请参考 [部署指南](https://docs.newapi.pro/zh/docs/installation)
+📖 更多部署方式请参考 [部署指南](https://www.octorouter.com/docs/installation)
 
 ---
 
@@ -159,7 +159,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 📖 [官方文档](https://docs.newapi.pro/zh/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
+### 📖 [官方文档](https://www.octorouter.com/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
 
 </div>
 
@@ -167,17 +167,17 @@ docker run --name new-api -d --restart always \
 
 | 分类 | 链接 |
 |------|------|
-| 🚀 部署指南 | [安装文档](https://docs.newapi.pro/zh/docs/installation) |
-| ⚙️ 环境配置 | [环境变量](https://docs.newapi.pro/zh/docs/installation/config-maintenance/environment-variables) |
-| 📡 接口文档 | [API 文档](https://docs.newapi.pro/zh/docs/api) |
-| ❓ 常见问题 | [FAQ](https://docs.newapi.pro/zh/docs/support/faq) |
-| 💬 社区交流 | [交流渠道](https://docs.newapi.pro/zh/docs/support/community-interaction) |
+| 🚀 部署指南 | [安装文档](https://www.octorouter.com/docs/installation) |
+| ⚙️ 环境配置 | [环境变量](https://www.octorouter.com/docs/installation/config-maintenance/environment-variables) |
+| 📡 接口文档 | [API 文档](https://www.octorouter.com/docs/api) |
+| ❓ 常见问题 | [FAQ](https://www.octorouter.com/docs/support/faq) |
+| 💬 社区交流 | [交流渠道](https://www.octorouter.com/docs/support/community-interaction) |
 
 ---
 
 ## ✨ 主要特性
 
-> 详细特性请参考 [特性说明](https://docs.newapi.pro/zh/docs/guide/wiki/basic-concepts/features-introduction)
+> 详细特性请参考 [特性说明](https://www.octorouter.com/docs/guide/wiki/basic-concepts/features-introduction)
 
 ### 🎨 核心功能
 
@@ -207,11 +207,11 @@ docker run --name new-api -d --restart always \
 ### 🚀 高级功能
 
 **API 格式支持：**
-- ⚡ [OpenAI Responses](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/create-response)
-- ⚡ [OpenAI Realtime API](https://docs.newapi.pro/zh/docs/api/ai-model/realtime/create-realtime-session)（含 Azure）
-- ⚡ [Claude Messages](https://docs.newapi.pro/zh/docs/api/ai-model/chat/create-message)
-- ⚡ [Google Gemini](https://doc.newapi.pro/api/google-gemini-chat)
-- 🔄 [Rerank 模型](https://docs.newapi.pro/zh/docs/api/ai-model/rerank/create-rerank)（Cohere、Jina）
+- ⚡ [OpenAI Responses](https://www.octorouter.com/docs/api/ai-model/chat/openai/create-response)
+- ⚡ [OpenAI Realtime API](https://www.octorouter.com/docs/api/ai-model/realtime/create-realtime-session)（含 Azure）
+- ⚡ [Claude Messages](https://www.octorouter.com/docs/api/ai-model/chat/create-message)
+- ⚡ [Google Gemini](https://www.octorouter.com/docs/api/google-gemini-chat)
+- 🔄 [Rerank 模型](https://www.octorouter.com/docs/api/ai-model/rerank/create-rerank)（Cohere、Jina）
 
 **智能路由：**
 - ⚖️ 渠道加权随机
@@ -254,17 +254,17 @@ docker run --name new-api -d --restart always \
 
 ## 🤖 模型支持
 
-> 详情请参考 [接口文档 - 中继接口](https://docs.newapi.pro/zh/docs/api)
+> 详情请参考 [接口文档 - 中继接口](https://www.octorouter.com/docs/api)
 
 | 模型类型 | 说明 | 文档 |
 |---------|------|------|
-| 🤖 OpenAI-Compatible | OpenAI 兼容模型 | [文档](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/createchatcompletion) |
-| 🤖 OpenAI Responses | OpenAI Responses 格式 | [文档](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/createresponse) |
-| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [文档](https://doc.newapi.pro/api/midjourney-proxy-image) |
-| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [文档](https://doc.newapi.pro/api/suno-music) |
-| 🔄 Rerank | Cohere、Jina | [文档](https://docs.newapi.pro/zh/docs/api/ai-model/rerank/create-rerank) |
-| 💬 Claude | Messages 格式 | [文档](https://docs.newapi.pro/zh/docs/api/ai-model/chat/createmessage) |
-| 🌐 Gemini | Google Gemini 格式 | [文档](https://docs.newapi.pro/zh/docs/api/ai-model/chat/gemini/geminirelayv1beta) |
+| 🤖 OpenAI-Compatible | OpenAI 兼容模型 | [文档](https://www.octorouter.com/docs/api/ai-model/chat/openai/createchatcompletion) |
+| 🤖 OpenAI Responses | OpenAI Responses 格式 | [文档](https://www.octorouter.com/docs/api/ai-model/chat/openai/createresponse) |
+| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [文档](https://www.octorouter.com/docs/api/midjourney-proxy-image) |
+| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [文档](https://www.octorouter.com/docs/api/suno-music) |
+| 🔄 Rerank | Cohere、Jina | [文档](https://www.octorouter.com/docs/api/ai-model/rerank/create-rerank) |
+| 💬 Claude | Messages 格式 | [文档](https://www.octorouter.com/docs/api/ai-model/chat/createmessage) |
+| 🌐 Gemini | Google Gemini 格式 | [文档](https://www.octorouter.com/docs/api/ai-model/chat/gemini/geminirelayv1beta) |
 | 🔧 Dify | ChatFlow 模式 | - |
 | 🎯 自定义 | 支持完整调用地址 | - |
 
@@ -273,16 +273,16 @@ docker run --name new-api -d --restart always \
 <details>
 <summary>查看完整接口列表</summary>
 
-- [聊天接口 (Chat Completions)](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/createchatcompletion)
-- [响应接口 (Responses)](https://docs.newapi.pro/zh/docs/api/ai-model/chat/openai/createresponse)
-- [图像接口 (Image)](https://docs.newapi.pro/zh/docs/api/ai-model/images/openai/post-v1-images-generations)
-- [音频接口 (Audio)](https://docs.newapi.pro/zh/docs/api/ai-model/audio/openai/create-transcription)
-- [视频接口 (Video)](https://docs.newapi.pro/zh/docs/api/ai-model/audio/openai/createspeech)
-- [嵌入接口 (Embeddings)](https://docs.newapi.pro/zh/docs/api/ai-model/embeddings/createembedding)
-- [重排序接口 (Rerank)](https://docs.newapi.pro/zh/docs/api/ai-model/rerank/creatererank)
-- [实时对话 (Realtime)](https://docs.newapi.pro/zh/docs/api/ai-model/realtime/createrealtimesession)
-- [Claude 聊天](https://docs.newapi.pro/zh/docs/api/ai-model/chat/createmessage)
-- [Google Gemini 聊天](https://docs.newapi.pro/zh/docs/api/ai-model/chat/gemini/geminirelayv1beta)
+- [聊天接口 (Chat Completions)](https://www.octorouter.com/docs/api/ai-model/chat/openai/createchatcompletion)
+- [响应接口 (Responses)](https://www.octorouter.com/docs/api/ai-model/chat/openai/createresponse)
+- [图像接口 (Image)](https://www.octorouter.com/docs/api/ai-model/images/openai/post-v1-images-generations)
+- [音频接口 (Audio)](https://www.octorouter.com/docs/api/ai-model/audio/openai/create-transcription)
+- [视频接口 (Video)](https://www.octorouter.com/docs/api/ai-model/audio/openai/createspeech)
+- [嵌入接口 (Embeddings)](https://www.octorouter.com/docs/api/ai-model/embeddings/createembedding)
+- [重排序接口 (Rerank)](https://www.octorouter.com/docs/api/ai-model/rerank/creatererank)
+- [实时对话 (Realtime)](https://www.octorouter.com/docs/api/ai-model/realtime/createrealtimesession)
+- [Claude 聊天](https://www.octorouter.com/docs/api/ai-model/chat/createmessage)
+- [Google Gemini 聊天](https://www.octorouter.com/docs/api/ai-model/chat/gemini/geminirelayv1beta)
 
 </details>
 
@@ -325,7 +325,7 @@ docker run --name new-api -d --restart always \
 | `PYROSCOPE_BLOCK_RATE` | Pyroscope block 采样率                               | `5` |
 | `HOSTNAME` | Pyroscope 标签里的主机名                                          | `new-api` |
 
-📖 **完整配置：** [环境变量文档](https://docs.newapi.pro/zh/docs/installation/config-maintenance/environment-variables)
+📖 **完整配置：** [环境变量文档](https://www.octorouter.com/docs/installation/config-maintenance/environment-variables)
 
 </details>
 
@@ -336,7 +336,7 @@ docker run --name new-api -d --restart always \
 
 ```bash
 # 克隆项目
-git clone https://github.com/QuantumNous/new-api.git
+git clone https://github.com/oorouter.git
 cd new-api
 
 # 编辑配置
@@ -427,10 +427,10 @@ docker run --name new-api -d --restart always \
 
 | 资源 | 链接 |
 |------|------|
-| 📘 常见问题 | [FAQ](https://docs.newapi.pro/zh/docs/support/faq) |
-| 💬 社区交流 | [交流渠道](https://docs.newapi.pro/zh/docs/support/community-interaction) |
-| 🐛 反馈问题 | [问题反馈](https://docs.newapi.pro/zh/docs/support/feedback-issues) |
-| 📚 完整文档 | [官方文档](https://docs.newapi.pro/zh/docs) |
+| 📘 常见问题 | [FAQ](https://www.octorouter.com/docs/support/faq) |
+| 💬 社区交流 | [交流渠道](https://www.octorouter.com/docs/support/community-interaction) |
+| 🐛 反馈问题 | [问题反馈](https://www.octorouter.com/docs/support/feedback-issues) |
+| 📚 完整文档 | [官方文档](https://www.octorouter.com/docs) |
 
 ### 🤝 贡献指南
 
@@ -469,7 +469,7 @@ docker run --name new-api -d --restart always \
 
 如果这个项目对你有帮助，欢迎给我们一个 ⭐️ Star！
 
-**[官方文档](https://docs.newapi.pro/zh/docs)** • **[问题反馈](https://github.com/Calcium-Ion/new-api/issues)** • **[最新发布](https://github.com/Calcium-Ion/new-api/releases)**
+**[官方文档](https://www.octorouter.com/docs)** • **[问题反馈](https://github.com/Calcium-Ion/new-api/issues)** • **[最新发布](https://github.com/Calcium-Ion/new-api/releases)**
 
 <sub>Built with ❤️ by QuantumNous</sub>
 

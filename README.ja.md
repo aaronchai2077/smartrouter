@@ -110,7 +110,7 @@
 
 ```bash
 # プロジェクトをクローン
-git clone https://github.com/QuantumNous/new-api.git
+git clone https://github.com/oorouter.git
 cd new-api
 
 # docker-compose.yml 設定を編集
@@ -151,7 +151,7 @@ docker run --name new-api -d --restart always \
 
 🎉 デプロイが完了したら、`http://localhost:3000` にアクセスして使用を開始してください！
 
-📖 その他のデプロイ方法については[デプロイガイド](https://docs.newapi.pro/ja/docs/installation)を参照してください。
+📖 その他のデプロイ方法については[デプロイガイド](https://www.octorouter.com/docs/installation)を参照してください。
 
 ---
 
@@ -159,7 +159,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 📖 [公式ドキュメント](https://docs.newapi.pro/ja/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
+### 📖 [公式ドキュメント](https://www.octorouter.com/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
 
 </div>
 
@@ -167,17 +167,17 @@ docker run --name new-api -d --restart always \
 
 | カテゴリ | リンク |
 |------|------|
-| 🚀 デプロイガイド | [インストールドキュメント](https://docs.newapi.pro/ja/docs/installation) |
-| ⚙️ 環境設定 | [環境変数](https://docs.newapi.pro/ja/docs/installation/config-maintenance/environment-variables) |
-| 📡 APIドキュメント | [APIドキュメント](https://docs.newapi.pro/ja/docs/api) |
-| ❓ よくある質問 | [FAQ](https://docs.newapi.pro/ja/docs/support/faq) |
-| 💬 コミュニティ交流 | [交流チャネル](https://docs.newapi.pro/ja/docs/support/community-interaction) |
+| 🚀 デプロイガイド | [インストールドキュメント](https://www.octorouter.com/docs/installation) |
+| ⚙️ 環境設定 | [環境変数](https://www.octorouter.com/docs/installation/config-maintenance/environment-variables) |
+| 📡 APIドキュメント | [APIドキュメント](https://www.octorouter.com/docs/api) |
+| ❓ よくある質問 | [FAQ](https://www.octorouter.com/docs/support/faq) |
+| 💬 コミュニティ交流 | [交流チャネル](https://www.octorouter.com/docs/support/community-interaction) |
 
 ---
 
 ## ✨ 主な機能
 
-> 詳細な機能については[機能説明](https://docs.newapi.pro/ja/docs/guide/wiki/basic-concepts/features-introduction)を参照してください。
+> 詳細な機能については[機能説明](https://www.octorouter.com/docs/guide/wiki/basic-concepts/features-introduction)を参照してください。
 
 ### 🎨 コア機能
 
@@ -209,11 +209,11 @@ docker run --name new-api -d --restart always \
 ### 🚀 高度な機能
 
 **APIフォーマットサポート:**
-- ⚡ [OpenAI Responses](https://docs.newapi.pro/ja/docs/api/ai-model/chat/openai/create-response)
-- ⚡ [OpenAI Realtime API](https://docs.newapi.pro/ja/docs/api/ai-model/realtime/create-realtime-session)（Azureを含む）
-- ⚡ [Claude Messages](https://docs.newapi.pro/ja/docs/api/ai-model/chat/create-message)
-- ⚡ [Google Gemini](https://doc.newapi.pro/ja/api/google-gemini-chat)
-- 🔄 [Rerankモデル](https://docs.newapi.pro/ja/docs/api/ai-model/rerank/create-rerank)（Cohere、Jina）
+- ⚡ [OpenAI Responses](https://www.octorouter.com/docs/api/ai-model/chat/openai/create-response)
+- ⚡ [OpenAI Realtime API](https://www.octorouter.com/docs/api/ai-model/realtime/create-realtime-session)（Azureを含む）
+- ⚡ [Claude Messages](https://www.octorouter.com/docs/api/ai-model/chat/create-message)
+- ⚡ [Google Gemini](https://www.octorouter.com/docs/ja/api/google-gemini-chat)
+- 🔄 [Rerankモデル](https://www.octorouter.com/docs/api/ai-model/rerank/create-rerank)（Cohere、Jina）
 
 **インテリジェントルーティング:**
 - ⚖️ チャネル重み付けランダム
@@ -256,17 +256,17 @@ docker run --name new-api -d --restart always \
 
 ## 🤖 モデルサポート
 
-> 詳細については[APIドキュメント - 中継インターフェース](https://docs.newapi.pro/ja/docs/api)
+> 詳細については[APIドキュメント - 中継インターフェース](https://www.octorouter.com/docs/api)
 
 | モデルタイプ | 説明 | ドキュメント |
 |---------|------|------|
-| 🤖 OpenAI-Compatible | OpenAI互換モデル | [ドキュメント](https://docs.newapi.pro/ja/docs/api/ai-model/chat/openai/createchatcompletion) |
-| 🤖 OpenAI Responses | OpenAI Responsesフォーマット | [ドキュメント](https://docs.newapi.pro/ja/docs/api/ai-model/chat/openai/createresponse) |
-| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [ドキュメント](https://doc.newapi.pro/api/midjourney-proxy-image) |
-| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [ドキュメント](https://doc.newapi.pro/api/suno-music) |
-| 🔄 Rerank | Cohere、Jina | [ドキュメント](https://docs.newapi.pro/ja/docs/api/ai-model/rerank/creatererank) |
-| 💬 Claude | Messagesフォーマット | [ドキュメント](https://docs.newapi.pro/ja/docs/api/ai-model/chat/createmessage) |
-| 🌐 Gemini | Google Geminiフォーマット | [ドキュメント](https://docs.newapi.pro/ja/docs/api/ai-model/chat/gemini/geminirelayv1beta) |
+| 🤖 OpenAI-Compatible | OpenAI互換モデル | [ドキュメント](https://www.octorouter.com/docs/api/ai-model/chat/openai/createchatcompletion) |
+| 🤖 OpenAI Responses | OpenAI Responsesフォーマット | [ドキュメント](https://www.octorouter.com/docs/api/ai-model/chat/openai/createresponse) |
+| 🎨 Midjourney-Proxy | [Midjourney-Proxy(Plus)](https://github.com/novicezk/midjourney-proxy) | [ドキュメント](https://www.octorouter.com/docs/api/midjourney-proxy-image) |
+| 🎵 Suno-API | [Suno API](https://github.com/Suno-API/Suno-API) | [ドキュメント](https://www.octorouter.com/docs/api/suno-music) |
+| 🔄 Rerank | Cohere、Jina | [ドキュメント](https://www.octorouter.com/docs/api/ai-model/rerank/creatererank) |
+| 💬 Claude | Messagesフォーマット | [ドキュメント](https://www.octorouter.com/docs/api/ai-model/chat/createmessage) |
+| 🌐 Gemini | Google Geminiフォーマット | [ドキュメント](https://www.octorouter.com/docs/api/ai-model/chat/gemini/geminirelayv1beta) |
 | 🔧 Dify | ChatFlowモード | - |
 | 🎯 カスタム | 完全な呼び出しアドレスの入力をサポート | - |
 
@@ -275,16 +275,16 @@ docker run --name new-api -d --restart always \
 <details>
 <summary>完全なインターフェースリストを表示</summary>
 
-- [チャットインターフェース (Chat Completions)](https://docs.newapi.pro/ja/docs/api/ai-model/chat/openai/createchatcompletion)
-- [レスポンスインターフェース (Responses)](https://docs.newapi.pro/ja/docs/api/ai-model/chat/openai/createresponse)
-- [イメージインターフェース (Image)](https://docs.newapi.pro/ja/docs/api/ai-model/images/openai/post-v1-images-generations)
-- [オーディオインターフェース (Audio)](https://docs.newapi.pro/ja/docs/api/ai-model/audio/openai/create-transcription)
-- [ビデオインターフェース (Video)](https://docs.newapi.pro/ja/docs/api/ai-model/audio/openai/createspeech)
-- [エンベッドインターフェース (Embeddings)](https://docs.newapi.pro/ja/docs/api/ai-model/embeddings/createembedding)
-- [再ランク付けインターフェース (Rerank)](https://docs.newapi.pro/ja/docs/api/ai-model/rerank/creatererank)
-- [リアルタイム対話インターフェース (Realtime)](https://docs.newapi.pro/ja/docs/api/ai-model/realtime/createrealtimesession)
-- [Claudeチャット](https://docs.newapi.pro/ja/docs/api/ai-model/chat/createmessage)
-- [Google Geminiチャット](https://docs.newapi.pro/ja/docs/api/ai-model/chat/gemini/geminirelayv1beta)
+- [チャットインターフェース (Chat Completions)](https://www.octorouter.com/docs/api/ai-model/chat/openai/createchatcompletion)
+- [レスポンスインターフェース (Responses)](https://www.octorouter.com/docs/api/ai-model/chat/openai/createresponse)
+- [イメージインターフェース (Image)](https://www.octorouter.com/docs/api/ai-model/images/openai/post-v1-images-generations)
+- [オーディオインターフェース (Audio)](https://www.octorouter.com/docs/api/ai-model/audio/openai/create-transcription)
+- [ビデオインターフェース (Video)](https://www.octorouter.com/docs/api/ai-model/audio/openai/createspeech)
+- [エンベッドインターフェース (Embeddings)](https://www.octorouter.com/docs/api/ai-model/embeddings/createembedding)
+- [再ランク付けインターフェース (Rerank)](https://www.octorouter.com/docs/api/ai-model/rerank/creatererank)
+- [リアルタイム対話インターフェース (Realtime)](https://www.octorouter.com/docs/api/ai-model/realtime/createrealtimesession)
+- [Claudeチャット](https://www.octorouter.com/docs/api/ai-model/chat/createmessage)
+- [Google Geminiチャット](https://www.octorouter.com/docs/api/ai-model/chat/gemini/geminirelayv1beta)
 
 </details>
 
@@ -327,7 +327,7 @@ docker run --name new-api -d --restart always \
 | `PYROSCOPE_BLOCK_RATE` | Pyroscope blockサンプリング率 | `5` |
 | `HOSTNAME` | Pyroscope用のホスト名タグ | `new-api` |
 
-📖 **完全な設定:** [環境変数ドキュメント](https://docs.newapi.pro/ja/docs/installation/config-maintenance/environment-variables)
+📖 **完全な設定:** [環境変数ドキュメント](https://www.octorouter.com/docs/installation/config-maintenance/environment-variables)
 
 </details>
 
@@ -338,7 +338,7 @@ docker run --name new-api -d --restart always \
 
 ```bash
 # プロジェクトをクローン
-git clone https://github.com/QuantumNous/new-api.git
+git clone https://github.com/oorouter.git
 cd new-api
 
 # 設定を編集
@@ -427,10 +427,10 @@ docker run --name new-api -d --restart always \
 
 | リソース | リンク |
 |------|------|
-| 📘 よくある質問 | [FAQ](https://docs.newapi.pro/ja/docs/support/faq) |
-| 💬 コミュニティ交流 | [交流チャネル](https://docs.newapi.pro/ja/docs/support/community-interaction) |
-| 🐛 問題のフィードバック | [問題フィードバック](https://docs.newapi.pro/ja/docs/support/feedback-issues) |
-| 📚 完全なドキュメント | [公式ドキュメント](https://docs.newapi.pro/ja/docs) |
+| 📘 よくある質問 | [FAQ](https://www.octorouter.com/docs/support/faq) |
+| 💬 コミュニティ交流 | [交流チャネル](https://www.octorouter.com/docs/support/community-interaction) |
+| 🐛 問題のフィードバック | [問題フィードバック](https://www.octorouter.com/docs/support/feedback-issues) |
+| 📚 完全なドキュメント | [公式ドキュメント](https://www.octorouter.com/docs) |
 
 ### 🤝 貢献ガイド
 
@@ -469,7 +469,7 @@ docker run --name new-api -d --restart always \
 
 このプロジェクトがあなたのお役に立てたなら、ぜひ ⭐️ スターをください！
 
-**[公式ドキュメント](https://docs.newapi.pro/ja/docs)** • **[問題フィードバック](https://github.com/Calcium-Ion/new-api/issues)** • **[最新リリース](https://github.com/Calcium-Ion/new-api/releases)**
+**[公式ドキュメント](https://www.octorouter.com/docs)** • **[問題フィードバック](https://github.com/Calcium-Ion/new-api/issues)** • **[最新リリース](https://github.com/Calcium-Ion/new-api/releases)**
 
 <sub>❤️ で構築された QuantumNous</sub>
 

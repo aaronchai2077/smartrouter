@@ -30,6 +30,22 @@ func InitOptionMap() {
 	common.OptionMapRWMutex.Lock()
 	common.OptionMap = make(map[string]string)
 
+	// Optional deployment-time branding overrides.
+	// These only change the *initial* defaults that are seeded into OptionMap;
+	// any value already persisted in the `option` table will still take
+	// precedence (loaded later via loadOptionsFromDatabase). Existing
+	// hard-coded defaults in common/constants.go are intentionally preserved
+	// as the final fallback when these env vars are unset.
+	if v := common.GetEnvOrDefaultString("SYSTEM_NAME_DEFAULT", ""); v != "" {
+		common.SystemName = v
+	}
+	if v := common.GetEnvOrDefaultString("FOOTER_DEFAULT", ""); v != "" {
+		common.Footer = v
+	}
+	if v := common.GetEnvOrDefaultString("LOGO_DEFAULT", ""); v != "" {
+		common.Logo = v
+	}
+
 	// 添加原有的系统配置
 	common.OptionMap["FileUploadPermission"] = strconv.Itoa(common.FileUploadPermission)
 	common.OptionMap["FileDownloadPermission"] = strconv.Itoa(common.FileDownloadPermission)
