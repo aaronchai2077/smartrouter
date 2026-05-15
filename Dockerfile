@@ -18,8 +18,10 @@ COPY ./web/classic .
 COPY ./VERSION .
 RUN VITE_REACT_APP_VERSION=$(cat VERSION) bun run build
 
-FROM golang:1.24-alpine AS builder2
+FROM golang:1.25-alpine AS builder2
 ENV GO111MODULE=on CGO_ENABLED=0
+ENV GOPROXY=https://goproxy.cn,direct
+ENV GOSUMDB=sum.golang.org
 
 ARG TARGETOS
 ARG TARGETARCH
