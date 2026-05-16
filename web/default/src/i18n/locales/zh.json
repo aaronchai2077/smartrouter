@@ -4454,6 +4454,26 @@
     "operation and charging behavior": "运营和收费行为产生的法律责任",
     "，": "，",
     "，and ": "，",
-    "、": "、"
+    "、": "、",
+    "API Documentation": "接口文档",
+    "A unified gateway for OpenAI, Claude, Gemini and more. Use any OpenAI-compatible SDK or the native Claude Messages API.": "统一对接 OpenAI、Claude、Gemini 等模型。可使用任意 OpenAI 兼容 SDK，或直接调用 Claude Messages 接口。",
+    "Quick Start": "快速开始",
+    "Pick your preferred language or tool to get started.": "选择你喜欢的语言或工具，立即开始使用。",
+    "Endpoint Reference": "接口说明",
+    "Supported Endpoints": "支持的接口",
+    "Claude Messages API": "Claude Messages 接口",
+    "Getting Started": "准备工作",
+    "1. Create an API key": "1. 创建 API 密钥",
+    "2. Pick a model": "2. 选择模型",
+    "3. Replace the base URL": "3. 替换 Base URL",
+    "Go to the API Keys page and click Create.": "前往「API 密钥」页面点击新建。",
+    "Browse the Pricing page to find available models.": "在「价格」页面查看可用模型。",
+    "Point your existing SDK at the Base URL above.": "把现有 SDK 的 baseURL 指向上方地址即可。",
+    "How do I switch models?": "如何切换不同模型？",
+    "Just change the \"model\" parameter in your request.": "在请求中修改 \"model\" 参数即可。",
+    "Is streaming supported?": "是否支持流式响应？",
+    "Yes. Set \"stream\": true to receive SSE events.": "支持。在请求中设置 \"stream\": true 即可接收 SSE 事件。",
+    "Where can I see usage?": "在哪里查看用量？",
+    "Check the Logs page in the console.": "请在控制台「日志」页面查看。"
   }
 }

@@ -4454,6 +4454,26 @@
     "operation and charging behavior": "operation and charging behavior",
     "，": ", ",
     "，and ": ", and ",
-    "、": ", "
+    "、": ", ",
+    "API Documentation": "API Documentation",
+    "A unified gateway for OpenAI, Claude, Gemini and more. Use any OpenAI-compatible SDK or the native Claude Messages API.": "A unified gateway for OpenAI, Claude, Gemini and more. Use any OpenAI-compatible SDK or the native Claude Messages API.",
+    "Quick Start": "Quick Start",
+    "Pick your preferred language or tool to get started.": "Pick your preferred language or tool to get started.",
+    "Endpoint Reference": "Endpoint Reference",
+    "Supported Endpoints": "Supported Endpoints",
+    "Claude Messages API": "Claude Messages API",
+    "Getting Started": "Getting Started",
+    "1. Create an API key": "1. Create an API key",
+    "2. Pick a model": "2. Pick a model",
+    "3. Replace the base URL": "3. Replace the base URL",
+    "Go to the API Keys page and click Create.": "Go to the API Keys page and click Create.",
+    "Browse the Pricing page to find available models.": "Browse the Pricing page to find available models.",
+    "Point your existing SDK at the Base URL above.": "Point your existing SDK at the Base URL above.",
+    "How do I switch models?": "How do I switch models?",
+    "Just change the \"model\" parameter in your request.": "Just change the \"model\" parameter in your request.",
+    "Is streaming supported?": "Is streaming supported?",
+    "Yes. Set \"stream\": true to receive SSE events.": "Yes. Set \"stream\": true to receive SSE events.",
+    "Where can I see usage?": "Where can I see usage?",
+    "Check the Logs page in the console.": "Check the Logs page in the console."
   }
 }

@@ -75,6 +75,19 @@ const Home = () => {
   const isMobile = useIsMobile();
   const isDemoSiteMode = statusState?.status?.demo_site_enabled || false;
   const docsLink = statusState?.status?.docs_link || '';
+  // 顶栏导航模块开关（与顶栏菜单共用同一份配置）。
+  // docs 字段控制首页中间的"文档"按钮是否显示。
+  const headerNavModules = (() => {
+    const raw = statusState?.status?.HeaderNavModules;
+    if (!raw) return { docs: true };
+    if (typeof raw === 'object') return raw;
+    try {
+      return JSON.parse(raw) || { docs: true };
+    } catch {
+      return { docs: true };
+    }
+  })();
+  const docsModuleEnabled = headerNavModules.docs === true;
   const serverAddress =
     statusState?.status?.server_address || `${window.location.origin}`;
   const endpointItems = API_ENDPOINTS.map((e) => ({ value: e }));
@@ -239,12 +252,18 @@ const Home = () => {
                       {statusState.status.version}
                     </Button>
                   ) : (
-                    docsLink && (
+                    docsModuleEnabled && (
                       <Button
                         size={isMobile ? 'default' : 'large'}
                         className='flex items-center !rounded-3xl px-6 py-2'
                         icon={<IconFile />}
-                        onClick={() => window.open(docsLink, '_blank')}
+                        onClick={() => {
+                          if (docsLink) {
+                            window.open(docsLink, '_blank');
+                          } else {
+                            window.location.href = '/docs';
+                          }
+                        }}
                       >
                         {t('文档')}
                       </Button>
